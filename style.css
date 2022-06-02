@@ -10,15 +10,13 @@
 }
 
 :root{
-    --main-color- : #2549D3;
+    --main-color- : #0F298B;
     --color- :#000000;
+    --bg- : rgb(117, 100, 100);
 }
 
 html{
     font-size: 65%;
-    
-   
-
 }
 
 html::-webkit-scrollbar{
@@ -65,6 +63,7 @@ html::-webkit-scrollbar-thumb{
     margin: 1rem 0;
     font-weight: 600;
     font-size: 20px;
+    cursor: pointer;
 
 }
 
@@ -106,10 +105,10 @@ html::-webkit-scrollbar-thumb{
 
     width: 100px;
     height: 35px;
-
+    font-weight: 600;
     background: #2549D3;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .btn span:hover{
@@ -132,7 +131,7 @@ html::-webkit-scrollbar-thumb{
 .home .content h1{
     font-size: 40px;
     width: 70%;
-    height: 10%;
+    height: 15%;
     margin-top: 6rem;
     
     color: #0F298B;;
@@ -158,6 +157,31 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+.box {
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    padding: 5rem;
+}
+
+.box .content{
+    width: 20rem;
+}
+
+.box .content h3{
+    color: var(--main-color-);
+    font-weight: 700;
+    line-height: 0.1rem;
+}
+
+.box .content h4{
+    color: var(--bg-);
+}
+
+.box .content box-icon{
+    color: #000000;
+}
 
 
 
@@ -168,14 +192,6 @@ html::-webkit-scrollbar-thumb{
 
 
 
-[33mcommit e975ce79233ac35fab39840d1baa7c744fc9974b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
-Author: doannhom1 <thotin2003@gmail.com>
-Date:   Thu Jun 2 18:23:05 2022 +0700
 
-    add style.css file
 
-[33mcommit 949599c9c51aca3014792f31f4f15a310efcf34c[m
-Author: doannhom1 <thotin2003@gmail.com>
-Date:   Thu Jun 2 18:15:46 2022 +0700
 
-    add html
