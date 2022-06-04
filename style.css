@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Oleo+Script&family=Space+Grotesk&display=swap');
 * {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk';
     font-style: normal;
     flex: none;
     order: 0;
     flex-grow: 0;
-    text-transform: capitalize;
     
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
 
 :root{
     --main-color- : #0F298B;
@@ -62,7 +64,7 @@ html::-webkit-scrollbar-thumb{
     font-family: 'Oleo Script', cursive;
     margin: 1rem 0;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 3rem;
     cursor: pointer;
 
 }
@@ -78,7 +80,7 @@ html::-webkit-scrollbar-thumb{
     text-decoration: none;
     margin: 0 2rem;
     color: var(--color-);
-    font-size: 15px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -103,12 +105,12 @@ html::-webkit-scrollbar-thumb{
     padding: 6px 0px 6px 6px;
     gap: 5px;
 
-    width: 100px;
-    height: 35px;
+    width: 12rem;
+    height: 5rem;
     font-weight: 600;
     background: #2549D3;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .btn span:hover{
@@ -121,6 +123,7 @@ html::-webkit-scrollbar-thumb{
     margin-left: 10rem;
     display: flex;
     font-size: 100%;
+    gap: 10rem;
     
 }
 
@@ -129,28 +132,30 @@ html::-webkit-scrollbar-thumb{
 }
 
 .home .content h1{
-    font-size: 40px;
-    width: 70%;
+    font-size: 5rem;
+    width: 80%;
     height: 15%;
-    margin-top: 6rem;
+    line-height: 5.5rem;
+    margin-top: 8rem;
     
     color: #0F298B;;
     
 }
 
 .home .content p{
-    font-size: 20px;
+    font-size: 22px;
     width: 70%;
     font-weight: 500;
     height: 12%;
-    margin-top: 10rem;
+    margin-top: 11rem;
+    margin-bottom: 2rem;
     
 }
 
 .home .image img{
-    margin-top: 4rem;
-    width: 400px;
-    height: 25rem;
+    margin-top: 8rem;
+    width: 44rem;
+    height: 30rem;
     border-radius: 0 150px;
     margin-right: 1rem;
     
@@ -159,14 +164,20 @@ html::-webkit-scrollbar-thumb{
 
 .box {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-right: 10rem;
-    margin-left: 10rem;
-    padding: 5rem;
+    padding: 0 5rem;
+    gap: 5rem;
+   
+
+
 }
 
 .box .content{
     width: 20rem;
+    font-size: 1.5rem;
+    
 }
 
 .box .content h3{
@@ -179,19 +190,118 @@ html::-webkit-scrollbar-thumb{
     color: var(--bg-);
 }
 
-.box .content box-icon{
-    color: #000000;
+
+.box .topic {
+    text-align: center;
+    margin-top: 10rem;
+    width: 55rem;
+    height: auto;
+}
+.box .topic h1{
+    font-size: 3.5rem;
+    color: var(--main-color-);
+
+}
+
+.box .topic p{
+    font-size: 3rem;
+    width: 55rem;
+}
+
+
+.box-container {
+    display: flex;
+    align-items: center;
+    
+    gap: 10rem;
+
+    
+}
+.box-container .box {
+    display: block;
+    margin-left: 8rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+.box-container .box .image img{
+    font-style: normal;
+    width: 17rem;
+    height: 16rem;
+}
+
+.box-container .box .image .address{
+    width: 7rem;
+    height: 10rem;
+    margin-bottom: 3.2rem;
+    margin-top: 4rem;
+
+}
+
+.box-container .box .content{
+    margin-top: 1rem;
+}
+
+
+.box-container .box .content h1{
+    line-height: 5rem;
+    font-size: 2.5rem;
+}
+
+.box-container .box .content{
+    width: 20rem;
+    height: 20rem;
+    font-size: 1.5rem;
+}
+
+.box1{
+    width: 100%;
+    display: flex;
+    margin-top: 10rem;
+}
+
+
+.box1 .box{
+    gap: 10rem;
+   
+}
+
+.box1 .box .image img{
+    width: 55rem;
+    
+}
+
+.box1 .box .content {
+    width: 35%;
+    height: 15rem;
+}
+
+.box1 .box .content h1 {
+    color: var(--main-color-);
+    font-size: 2.8rem;
+    line-height: 6rem;
+    font-weight: 900;
 }
 
 
 
+.box1 .box .content .element p{
+    margin-bottom:3rem ;
+    font-size: 1.5rem;
+
+}
 
 
+.box1 .box .content .element .row1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
 
-
-
-
-
+.box1 .box .content .element .row1 .icon{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
 
 
 
